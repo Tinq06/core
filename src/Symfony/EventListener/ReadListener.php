@@ -53,6 +53,7 @@ final class ReadListener
      */
     public function onKernelRequest(RequestEvent $event): void
     {
+//        dd("Voila");
         $request = $event->getRequest();
         $operation = $this->initializeOperation($request);
 
